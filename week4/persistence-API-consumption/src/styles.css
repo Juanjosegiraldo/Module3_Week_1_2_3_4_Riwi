@@ -1,0 +1,160 @@
+/* ========================================
+   GENERAL STYLES
+   ======================================== */
+
+/* Basic styling for better visual presentation */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* ========================================
+   FORM STYLES
+   ======================================== */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   BUTTON STYLES
+   ======================================== */
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addProductBtn {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+}
+
+#addProductBtn:hover {
+    background-color: #45a049;
+}
+
+#syncBtn {
+    background-color: #2196F3;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#syncBtn:hover {
+    background-color: #0b7dda;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 15px;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}
+
+/* ========================================
+   PRODUCT LIST STYLES
+   ======================================== */
+
+#productList {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#productList li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #4CAF50;
+}
+
+.product-info {
+    flex-grow: 1;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.product-price {
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-description {
+    color: #666;
+    font-size: 14px;
+}
+
+/* ========================================
+   MESSAGE STYLES
+   ======================================== */
+
+.message {
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 4px;
+    display: none;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message.show {
+    display: block;
+}

@@ -1,0 +1,51 @@
+/* The :root selector stores global variables (design tokens). 
+   Centralizing colors here follows the 'Single Source of Truth' principle, 
+   making it easy to update the entire theme from one place.
+*/
+:root {
+    --primary-color: #28a745; /* Green for positive actions (Add) */
+    --danger-color: #dc3545;  /* Red for destructive actions (Delete) */
+}
+
+/* Base styles to improve default browser typography and spacing */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 20px; 
+    line-height: 1.6;
+}
+
+/* Button resets: we remove default borders and add a pointer cursor 
+   to provide clear 'affordance', signaling to the user that these are interactive.
+*/
+button { 
+    cursor: pointer; 
+    color: white; 
+    border: none; 
+    padding: 6px 12px; 
+    border-radius: 4px; 
+    transition: opacity 0.2s ease; /* Subtle transition for a smoother UI feel */
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Targeted styling using the CSS variables defined in :root */
+#addBtn { 
+    background-color: var(--primary-color); 
+}
+
+.delete-btn { 
+    background-color: var(--danger-color); 
+    margin-left: 10px; 
+}
+
+/* List item styling: adding margin for visual separation between tasks.
+   Using flexbox ensures the text and button align perfectly.
+*/
+
+li { 
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+}

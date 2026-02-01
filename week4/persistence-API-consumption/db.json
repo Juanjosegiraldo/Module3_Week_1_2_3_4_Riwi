@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "1769979741986e38uosuy8",
+      "name": "tablet",
+      "price": "200.00",
+      "description": "Gaming"
+    },
+    {
+      "id": "176998041099215m6ms9bd",
+      "name": "pc",
+      "price": "100.00",
+      "description": "ryzen 4060"
+    },
+    {
+      "id": "1769986595752b8mdnc7zk",
+      "name": "Poco X3 Pro",
+      "price": "45.33",
+      "description": "Mi celular"
+    },
+    {
+      "id": "1769986636408w0kf20d03",
+      "name": "TV",
+      "price": "233.00",
+      "description": "LED"
+    }
+  ]
+}
